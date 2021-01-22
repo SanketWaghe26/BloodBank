@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images2.jpg' %}" class="d-block w-100"  width="500px" height="615px" alt="Mountain">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Importance of blood donation</h4>
+              <h5>Image result for importance of blood donation
+                A single donation can save three lives.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images1.jpg' %}" style= "opacity:3;" class="d-block w-100"  width="500px" height="615px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Benefits of blood donation</h4>
+              <h5>Blood donation not only makes the receiver’s life good but also helps the donor to maintain good health</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images.jpg' %}" class="d-block w-100"  width="500px" height="615px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Why should I donate blood ?</h4>
+              <h5>Blood is the most precious gift that anyone can give to another person — the gift of life</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+{% endblock body %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+
+<form  method="post">
+  {% csrf_token %}
+  <div class="container">
+  <h2  style="text-align: center; margin-top: 5px; color:red">Contact Us</h2>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label mt-2">Name : </label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Enter Your Name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label mt-2">Address : </label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" name="address"
+      placeholder="Enter Your Address">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label mt-2 ">Email id : </label>
+    <input type="email" class="form-control" id="exampleFormControlInput3" name="email"
+      placeholder="Enter Your Email Id">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label mt-2 ">Phone Number : </label>
+    <input type="tel" class="form-control" id="exampleFormControlInput4" name="phone" placeholder="Enter Your Number">
+  </div>
+  <div class="text-center">
+  <input class="btn btn-success mt-2 " name="btn" type="submit" value="Submit">
+</div>
+</div>
+</form>
+
+
+{% endblock body %}
